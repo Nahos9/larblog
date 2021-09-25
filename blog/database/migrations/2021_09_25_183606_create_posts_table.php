@@ -22,8 +22,8 @@ class CreatePostsTable extends Migration
             $table->string('image');
             $table->timestamps();
 
-            $table->foreignId(User::class);
-            $table->foreignId(Categorie::class);
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('categorie_id')->constrained(); 
         });
     }
 
