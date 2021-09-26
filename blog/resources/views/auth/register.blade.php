@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
+@include('partials.log')
     <div class="container mt-48">
   
 <h1 class="text-3xl text-green-500 mb-6 text-center">Completez vos informations</h1>
