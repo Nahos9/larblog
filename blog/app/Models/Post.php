@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Categorie;
+use Illuminate\Support\Str;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -20,5 +21,10 @@ class Post extends Model
     public function categorie()
     {
         return $this->belongsTo(Categorie::class);
+    }
+
+    public function getTitleAttribute($attribute)
+    {
+        return str::title($attribute);
     }
 }

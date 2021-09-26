@@ -16,13 +16,13 @@ class PostController extends Controller
      */
     public function index()
     {
-        $pots = Post::all();
+        $pots = Post::with('categorie','user')->get();
         $users = User::all();
-        $categories = Categorie::all();
+        // $categories = Categorie::all();
         return view('post.index',[
             'posts'=>$pots,
             'users'=>$users,
-            'categories'=>$categories
+            // 'categories'=>$categories
         ]);
     }
 
