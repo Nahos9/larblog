@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categorie;
 use App\Models\Post;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -15,8 +17,12 @@ class PostController extends Controller
     public function index()
     {
         $pots = Post::all();
+        $users = User::all();
+        $categories = Categorie::all();
         return view('post.index',[
-            'posts'=>$pots
+            'posts'=>$pots,
+            'users'=>$users,
+            'categories'=>$categories
         ]);
     }
 

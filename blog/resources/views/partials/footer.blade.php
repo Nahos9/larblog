@@ -1,7 +1,7 @@
 <footer class="px-6 py-2 text-gray-100 bg-gray-800">
         <div class="container flex flex-col items-center justify-between mx-auto md:flex-row"><a href="#"
                 class="text-2xl font-bold">Nahos BLOG</a>
-            <p class="mt-2 md:mt-0">All rights reserved 2020.</p>
+            <p class="mt-2 md:mt-0">&copy; Nahos tout droit réserve 2021</p>
             <div class="flex mt-4 mb-2 -mx-2 md:mt-0 md:mb-0"><a href="#"
                     class="mx-2 text-gray-100 hover:text-gray-400"><svg viewBox="0 0 512 512"
                         class="w-4 h-4 fill-current">
